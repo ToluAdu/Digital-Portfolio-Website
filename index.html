@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+ <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title> My Portfolio </title>
+    <meta name="description" content="A website showcasing projects">
+ <meta name="keywords" content= "Projects">
+ <meta name="author" content="Tolu Adu">
+    
+    
+    
+<!--    ---------------------------------------------------->
+    
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    <!--    ------------------------------------------------------>
+    
+    
+    
+    
+    
+      <!--    ------------------------------------------------------>
+    
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
+<!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+    
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+   
+   <link href="css/hover-min.css" rel="stylesheet">
+    
+    
+    <link href="css/lightbox.css" rel="stylesheet">
+    
+    
+   
+
+    
+    
+    <link rel="stylesheet" href="css/remodal.css">
+<link rel="stylesheet" href="css/remodal-default-theme.css">
+    
+    
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    
+  
+  
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:600" rel="stylesheet">
+
+    
+    
+    
+    
+<!--    ****************************************-->
+    
+<!--     script start-->
+   
+ 
+    
+    
+    
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+      
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+
+	<script>
+		$(function() {
+			$('#mainNav a').on('click', function(event) {
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1500, 'easeInOutExpo');
+				return false;
+			});
+            
+           
+            
+			// Activate scrollspy to add active class to navbar items on scroll
+			$('body').scrollspy({
+				target: '#mainNav'
+                
+                
+			});
+
+			// Closes responsive menu when a link is clicked
+			$('.navbar-collapse>ul>li>a').click(function() {
+				$('.navbar-collapse').collapse('hide');
+			});
+		});
+        
+        
+        
+        
+        
+//        skill bar code old
+        
+//        jQuery(document).ready(function(){
+//	jQuery('.skillbar').each(function(){
+//		jQuery(this).find('.skillbar-bar').animate({
+//			width:jQuery(this).attr('data-percent')
+//		},9000);
+//	});
+//});
+//        
+        
+        // new on scroll skill bar
+        jQuery(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 100){
+            
+            jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},5000);
+	});
+            
+           
+            
+        }
+    });
+});
+        
+        
+        
+       
+
+	</script>
+    
+
+    <script src="js/remodal.min.js"></script>
+    
+    <script> $('.carousel').carousel({
+  interval: 3000
+}) </script>
+    
+    
+     
+    
+    
+    
+    <script src="js/lightbox.js">
+    
+</script>
+    
+   
+ 
+    
+ 
+    
+<!--    ------------------------------------------------------>
+      
+    
+
+    
+    
+</head>
+
+<body data-spy="scroll" data-target="#mainNav"  >
+
+	<nav class="navbar navbar-expand-lg bg-white fixed-top" id="mainNav" >
+		<a class="navbar-brand hvr-bob" href="index.html" data-aos="fade-right">Toluinho</a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+<!--- navbar-light bg-light -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+			<ul class="navbar-nav ml-auto" data-aos="fade-down">
+                
+                
+				<li class="nav-item"><a class="nav-link active hvr-underline-from-left" href="#home" data-toggle="tab">home</a></li>
+<li class="nav-item"><a class="nav-link  hvr-underline-from-left" href="#about" data-toggle="tab">about</a></li>
+<li class="nav-item"><a class="nav-link hvr-underline-from-left" href="#javascript" data-toggle="tab">programming</a></li>
+<li class="nav-item"><a class="nav-link hvr-underline-from-left" href="#photography" data-toggle="tab">photography</a></li>
+<li class="nav-item"><a class="nav-link hvr-underline-from-left" href="#animation" data-toggle="tab">animation</a></li>
+<li class="nav-item"><a class="nav-link hvr-underline-from-left" href="#contact" data-toggle="tab">contact</a></li>
+                
+                
+                
+			</ul>
+		</div>
+	</nav>
+    
+    
+    
+	<div id="pages"  >
+        
+<section id="home">
+    
+    <div class="container">
+ <div class="row">
+ <div class="col-12">
+ <header class="hvr-bob">
+ <h1 class="h1a" data-aos="fade-right" >Hello! </h1>
+     <h1 class="h1b"  data-aos="fade-up" data-aos-duration="2500">I'm a freelance app developer based in London</h1>
+ </header>
+ </div>
+ </div>
+     
+   
+        
+        
+<!--       https://codepen.io/alexandr-kazakov/pen/PmYamP -->
+        
+        
+        
+<!--
+        -------------scroll button stuff-----------------
+        
+-->
+         <div class="wrapper" >
+    <!-- begin Scroll Down Button -->
+             
+           
+            
+    <button type="button" class="scroll_down" id="scroll_down"></button>
+                
+            
+             
+             
+    <!-- end Scroll Down Button -->
+  </div>
+<!-- test -->
+ 
+        
+        <script> 
+            
+            (function() {
+  'use strict';
+
+  var btnScrollDown = document.querySelector('#scroll_down');
+
+  function scrollDown() {
+    var windowCoords = document.documentElement.clientHeight;
+     
+    (function scroll() {
+        
+        
+       
+     if (window.pageYOffset < windowCoords) {
+        window.scrollBy(0, 15);
+        setTimeout(scroll, 0);
+     }
+     if (window.pageYOffset > windowCoords) {
+       window.scrollTo(0, windowCoords);
+          
+        
+     }
+        
+        
+        
+        
+        
+    })();
+  }
+
+  btnScrollDown.addEventListener('click', scrollDown);
+})();
+        
+        
+        
+        
+        </script>
+        
+        
+
+        
+        <!--
+        -------------scroll button end-----------------
+        
+-->
+      
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</section>
+        
+<!--     ---------------------------------------------------------------   -->
+<section id="about">
+     
+     <div class="container">
+        
+         <div class="myskills" data-aos="zoom-in-right"> 
+           
+         <div class="myskills2"> <h1>Skills </h1> </div>
+               <div class="myskills1">  Services and other proficiencies</div>
+         
+         
+         
+         </div>
+         
+         
+    
+<div data-aos="fade-up">
+    
+<div class="skillbar clearfix " data-percent="95%" >
+	<div class="skillbar-title" style="background: white;"><span>HTML5</span></div>
+	<div class="skillbar-bar" style="background: red;"></div>
+	<div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="80%">
+	<div class="skillbar-title" style="background: white;"><span>CSS3</span></div>
+	<div class="skillbar-bar" style="background: red;"></div>
+	<div class="skill-bar-percent">80%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: white;"><span>Java</span></div>
+	<div class="skillbar-bar" style="background: red;"></div>
+	<div class="skill-bar-percent">85%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: white;"><span>C</span></div>
+	<div class="skillbar-bar" style="background: red;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="65%">
+	<div class="skillbar-title" style="background: white;"><span> Maya</span></div>
+	<div class="skillbar-bar" style="background: red;"></div>
+	<div class="skill-bar-percent">65%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="70%">
+	<div class="skillbar-title" style="background: white;"><span>Photography</span></div>
+	<div class="skillbar-bar" style="background: red;"></div>
+	<div class="skill-bar-percent">70%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="75%">
+	<div class="skillbar-title" style="background: white;"><span>Javascript</span></div>
+	<div class="skillbar-bar" style="background: red;"></div>
+	<div class="skill-bar-percent">75%</div>
+</div> 
+         
+         </div>
+         <!-- End Skill Bar -->
+
+
+         
+        </div>
+    
+<!--    ***********************************************************-->
+
+
+    <div class="container contentser"> 
+    
+   
+    
+    <div class="row" data-aos="fade-down"
+     data-aos-easing="linear" data-aos-duration="2000"> 
+        
+        
+        <div class="col-sm-4 ser media" >
+            <img src="img/cursorRed.svg" alt="John Doe" class="mr-3 mt-1" style="width:40px;">
+          
+            <div class="media-body"> 
+      <h3>Web Design</h3>
+      <p>Front-end web development utilising CSS3 and Bootstrap, modern designs, cross-browser compatibility and responsiveness.</p>
+  
+            
+          </div>  
+            
+    </div>
+        
+        
+     <div class="col-sm-4 ser media" >
+            <img src="img/gamepad-controller.svg" alt="John Doe" class="mr-3 mt-1" style="width:40px;">
+          
+            <div class="media-body"> 
+      <h3>Games Dev</h3>
+      <p>Coding simple and fun games using software like BlueJ and Processing, with the main language of choice being Java.</p>
+    
+            
+          </div>  
+            
+    </div>
+        
+        
+         
+        
+        <div class="col-sm-4 ser media" >
+            <img src="img/playstore.svg" alt="John Doe" class="mr-3 mt-1" style="width:40px;">
+          
+            <div class="media-body"> 
+      <h3>Small App Dev</h3>
+      <p>Small application writing such as school module enrolment systems and various other data logging programs.</p>
+  
+            
+          </div>  
+            
+    </div>
+        
+        
+        
+        
+        
+        
+
+        
+        </div>
+        
+        
+        
+        
+         
+    <div class="row" data-aos="fade-up" data-aos-duration="2000"> 
+        
+        
+        <div class="col-sm-4 ser media">
+            <img src="img/cube.svg" alt="John Doe" class="mr-3 mt-1" style="width:40px;">
+          
+            <div class="media-body"> 
+      <h3>3D Modelling</h3>
+      <p>3D Modelling using Maya, placing and blending computer generated objects on to a given backplate and texturing them.</p>
+   
+            
+          </div>  
+            
+    </div>
+        
+        
+     <div class="col-sm-4 ser media">
+            <img src="img/video-camera.svg" alt="John Doe" class="mr-3 mt-1" style="width:40px;">
+          
+            <div class="media-body"> 
+      <h3>Video Editing</h3>
+      <p>Raw footage editing, using Final Cut Pro or Adobe Priemere pro, including colour correction, audio mixing, seamless transitioning and special effects.</p>
+   
+            
+          </div>  
+            
+    </div>
+        
+        
+         
+        
+        <div class="col-sm-4 ser media">
+            <img src="img/photocamred.svg" alt="John Doe" class="mr-3 mt-1" style="width:40px;">
+          
+            <div class="media-body"> 
+      <h3>Photography</h3>
+      <p>Event, personal or business photography available. Landscapes, headshots, sports photgraphy and more.</p>
+   
+            
+          </div>  
+            
+    </div>
+        
+        
+        
+        
+        
+        
+
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+         
+         
+        <div class="container aboutcontainer"> 
+    
+            
+            
+            
+<!--
+           <div class="row aboutrow " data-aos="fade-down">
+     <h4 class="about"> Let's </h4>
+              <h4 class="about2"> Talk</h4>
+                </div> 
+-->
+            
+            
+            
+    
+    <div class="row"> 
+         
+            
+             <div class="col-sm-6">
+            
+          
+            <img class="img-responsive img-thumbnail tech" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Chania" data-aos="zoom-in" data-aos-duration="2000">
+                
+             </div>
+        
+        
+        
+        
+        <div class="col-sm-6" data-aos="fade-left">  <p class="aboutp"> "Creative and methodical, I put emphasis on attention to detail. My strong suit is in programming, from Java applications to Web design I enjoy building programs and solving problems, despite this I do appreciate art and its application and input into program development."</p>
+        <p class="tagpara">- Tolu Adu</p></div>
+    
+    
+    
+    
+    </div> 
+      
+
+          </div>   
+         
+         
+   
+         
+
+
+    
+    
+    
+    
+
+
+         
+        </section>
+        
+        
+        
+        
+       
+        
+<!--  -------------------------------------------------------------      -->
+        
+        <section id="javascript" >
+    
+            <div class="container javasect"> 
+            
+            <div class="row"> 
+                 <div class="col-sm-6" data-aos="fade-right" data-aos-duration="2300">
+                     
+                     <h4> Programming Projects </h4>
+                     
+                     
+                </div>
+                
+                
+                </div>
+                
+                <div class="row"> 
+                
+                <div class="col-sm-6 java infoT" data-aos="fade-right">
+                     
+                     
+                    
+                    <p> A collection of recent programming projects across various different languages, showcasing my ability to design attractive and clean looking UI's as well as displaying my functional and problem-solving skills. I have used a range of programming and development techniques across the range of projects from handling array-lists, generating random variables and utilising loops and if-statements. </p>
+                     
+                     
+                </div>
+                
+                    
+                
+            
+                
+                </div>
+                
+                
+                
+                <div class="row"> 
+                
+                
+                <div class="col-sm-6 java2">
+                     
+<!--                   ** empty for left spacing **-->
+                     
+                     
+                </div>
+                       <div class="col-sm-6 java2" data-aos="fade-left">
+                     
+                     <div class="infoT"> 
+                         
+                         
+                         
+                         
+                         <div class="boldinfo">Project years: 2017, 2018 </div> 
+                        <div class="boldinfo"> Software: Adobe Brackets, Processing, Blue J and Visual Studio, Arduino</div> 
+                    
+                        <div class="boldinfo">Projects: 5 </div> 
+                         
+                         
+                         
+                         
+                         
+                           </div>
+                     
+                     
+                </div>
+                
+                
+        
+                </div>
+                
+                
+<!--   -------------------------------------------------------
+
+invaders game project
+-->
+                
+                <div class="row  linerow"> 
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-4">
+<!--               <img class="line" src="/img/iconline.svg" alt="line"  data-aos="fade-up"></div>-->
+                   
+                   <div class="vl"  data-aos="fade-up" ></div> 
+                    
+                    </div>
+                    
+                <div class="col-sm-4"> </div>
+                
+              
+                </div>
+            
+            
+            <div class="row javacontent"> 
+                
+                <div class="col-sm-1 marker" data-aos="zoom-in-down" data-aos-duration="2500"> 01 </div>
+                
+            
+                <div class="col-sm-5 infoT javaparas"  data-aos="zoom-in" data-aos-duration="2500">
+                    
+                    
+                              
+     <a data-remodal-target="invaders" href="#" class="hvr-float-shadow">       
+                    
+
+                   <img src="img/Invasion.svg" alt="image" class="javaimages img-fluid" > 
+                    
+                  
+           </a>    
+                
+                
+                
+                
+                </div>
+            
+             
+                 <div class="col-sm-5 infoT javaparas" data-aos="zoom-in" data-aos-duration="2500"> Project Name: Invaders Space Game <br>
+                     Languages: Java
+                     <br> Summary: A  Java game made on Processing, with arduino controls.
+                </div>
+                
+                
+
+            
+            
+            
+            
+            </div>
+                
+<!--      ------------------------------------------------------  
+learning arithmetic project
+-->
+                
+                
+                
+                <div class="row  linerow"> 
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-4">
+                <div class="vl"  data-aos="fade-up" ></div> </div>
+                <div class="col-sm-4"> </div>
+                </div>
+              
+            
+            
+            
+            <div class="row javacontent"> 
+                
+                
+            
+             
+                 <div class="col-sm-5 infoT javaparas"  data-aos="zoom-in" data-aos-duration="2500"> Project Name: Learning Arithmetic Website <br>
+                     Languages: HTML, CSS3, Javascript
+                     <br> Summary: An interactive maths website for children </div>
+                
+             
+                
+            
+                <div class="col-sm-5 infoT javaparas" data-aos="zoom-in" data-aos-duration="2500">
+                    
+                    
+                     <a data-remodal-target="jsweb" href="#" class="hvr-float-shadow">
+                   
+                    
+                    <img src="img/LA/LA1.JPG" class="javaimages img-fluid" alt="image"> 
+                
+                
+                </a> 
+                
+                
+                </div>
+                
+                
+                   <div class="col-sm-1 marker2" data-aos="zoom-in" data-aos-duration="2500"> 02 </div>
+            
+            
+            
+            
+            </div>
+                
+             
+<!--
+   -----------------------------------------------------------
+                morse code project
+                
+-->
+       
+   <div class="row  linerow"> 
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-4">
+                <div class="vl"  data-aos="fade-up" ></div> </div>
+                <div class="col-sm-4"> </div>
+                </div>
+              
+            
+            
+            
+            <div class="row javacontent"> 
+                
+                <div class="col-sm-1 marker" data-aos="zoom-in" data-aos-duration="2500"> 03 </div>
+                
+            
+                <div class="col-sm-5 infoT javaparas"  data-aos="zoom-in" data-aos-duration="2500">
+                    
+                    
+                              
+     <a data-remodal-target="morse" href="#" class="hvr-float-shadow">       
+                    
+
+                   <img src="img/MC/MCT.jpg" alt="image" class="javaimages img-fluid" > 
+                    
+                  
+           </a>    
+                
+                
+                
+                
+                </div>
+            
+             
+                 <div class="col-sm-5 infoT javaparas" data-aos="zoom-in" data-aos-duration="2500"> Project Name: Morse Code Translator <br>
+                     Languages: C
+                     <br> Summary: A program that converts text files into morse code  </div>
+                
+                
+
+            
+            
+            
+            
+            </div>
+                              
+                
+<!--
+    -----------------------------------------------------
+                blue J game
+-->
+                
+                
+ <div class="row  linerow"> 
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-4">
+                <div class="vl"  data-aos="fade-up" ></div> </div>
+                <div class="col-sm-4"> </div>
+                </div>
+              
+            
+            
+            
+            <div class="row javacontent"> 
+                
+                
+            
+             
+                 <div class="col-sm-5 infoT javaparas"  data-aos="zoom-in" data-aos-duration="2500"> Project Name: Golden Picker Game <br>
+                     Languages: Java
+                     <br> Summary: A game on estimating shape sizes  </div>
+                
+             
+                
+            
+                <div class="col-sm-5 infoT javaparas" data-aos="zoom-in" data-aos-duration="2500">
+                    
+                    
+                     <a data-remodal-target="bluej" href="#" class="hvr-float-shadow">
+                   
+                    
+                    <img src="img/GP/GP1.JPG" alt="image" class="javaimages img-fluid" > 
+                
+                
+                </a> 
+                
+                
+                </div>
+                
+                
+                   <div class="col-sm-1 marker2" data-aos="zoom-in" data-aos-duration="2500"> 04 </div>
+            
+            
+            
+            
+            </div>               
+                
+<!--
+  ---------------------------------------------------------
+                web design 
+-->
+                
+    <div class="row  linerow"> 
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-4">
+                <div class="vl"  data-aos="fade-up" ></div> </div>
+                <div class="col-sm-4"> </div>
+                </div>
+              
+            
+            
+            
+            <div class="row javacontent"> 
+                
+                <div class="col-sm-1 marker" data-aos="zoom-in" data-aos-duration="2500"> 05 </div>
+                
+            
+                <div class="col-sm-5 infoT javaparas"  data-aos="zoom-in" data-aos-duration="2500">
+                    
+                    
+                              
+     <a data-remodal-target="webdesign" href="#" class="hvr-float-shadow">       
+                    
+
+                   <img src="img/WD/WD1.JPG" alt="image" class="javaimages img-fluid" > 
+                    
+                  
+           </a>    
+                
+                
+                
+                
+                </div>
+            
+             
+                 <div class="col-sm-5 infoT javaparas" data-aos="zoom-in" data-aos-duration="2500"> Project Name: Personal Website <br>
+                     Languages: HTML, CSS3
+                     <br> Summary: A website displaying interests in certain categories </div>
+                
+                
+
+            
+            
+            
+            
+            </div>             
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+<!--
+                
+                ----------------------------------------------
+                          modal content start
+                ----------------------------------------------
+-->
+                
+           <div class="row">
+               
+               
+                
+<div class="remodal" data-remodal-id="invaders" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1 class="titlemodal">Invaders Java Game</h1>
+    
+    
+      
+     <div class="carouselmain" >          
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid" src="img/IG/IG1.JPG" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/IG/IG2.JPG" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/IG/IG3.JPG" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="img/IG/IG4.JPG" alt="Fourth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span  class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+     </div>             
+       
+    
+    
+    <p class="paramodal">
+    This project involved developing a game using the Java language and creating user-interactivity with Arduino controls, this was a combination of hardware and software development. We used an Arduino board in conjunction with a breadboard and Arduino software to allow the user to control the on-screen game with physical controls other than a mouse and keyboard (buttons and a servo). <br><br>'Invaders' is first person shooter where you contol a space-tank and must shoot down enough alien spaceships to meet the required score. If you meet the score, you move to the next wave where the aliens are faster, more accuarate and bombs do more damage. There is a random shield that pops up to boost health, this is especially needed in the later waves.
+        
+  </p>
+  <br>
+  
+</div>
+            
+     
+<div class="remodal" data-remodal-id="jsweb"
+  data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1 class="titlemodal"> Javascript Website</h1>
+    
+    
+      
+     <div class="carouselmain" >          
+   <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/LA/LA1.JPG" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/LA/LA2.JPG" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/LA/LA3.JPG" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="img/LA/LA4.JPG" alt="Fourth slide">
+    </div>
+        <div class="carousel-item">
+      <img class="d-block w-100" src="img/LA/LA5.JPG" alt="Fifth slide">
+    </div>
+        <div class="carousel-item">
+      <img class="d-block w-100" src="img/LA/LA6.JPG" alt="Sixth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+     </div>             
+      
+    
+    
+    
+    
+    
+    
+  <p class="paramodal caromobilespace">
+   Learning Arithmetic, is a website made with HTML, Styles and Javascript code. It is a child-friendly website aimed to help kids with learning basic arithmetic. The functionality of the website is, random basic maths questions (multiplation, addition and subtraction) are generated, the user input is then checked on click of the 'check my answer' button where a pop up will appear giving a random message from a list of messages depending on the whether the question was answered correctly (i.e correct answer responses, incorrect answer responses). <br><br>
+      E.g a Correct answer would generate a positive encouraging message like 'Correct - good effort'. The amount of correct and incorrect answers are recorded and a live grade and message based on the grade are generated and displayed at the bottom of the webpage.
+  </p>
+  <br>
+ 
+</div>       
+                               
+                
+<div class="remodal" data-remodal-id="morse"
+  data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+    
+    
+<!--    ----------->
+
+ <button data-remodal-action="close" class="remodal-close"></button>
+  <h1 class="titlemodal">Morse Code Translator </h1>
+    
+    
+      
+     <div class="carouselmain" >          
+   <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators3" data-slide-to="6"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/MC/MC0.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/MC/MC1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/MC/MC2.jpg" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="img/MC/MC3.jpg" alt="Fourth slide">
+    </div>
+        <div class="carousel-item">
+      <img class="d-block w-100" src="img/MC/MC4.jpg" alt="Fifth slide">
+    </div>
+        <div class="carousel-item">
+      <img class="d-block w-100" src="img/MC/MC5.jpg" alt="Sixth slide">
+    </div>
+      <div class="carousel-item">
+      <img class="d-block w-100" src="img/MC/MC6.jpg" alt="Seventh slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+     </div>             
+      
+    
+    
+    
+    
+    
+    
+  <p class="paramodal">
+      (Change slides by clicking on the same area as you have in previous projects)<br><br>
+   The Morse Code Translator does exactly what the name suggests, converts english into more code. The Translator is built with the C language and works by processing a text file with english text inside, firstly it generates text stats based on the file such as word counts, line counts etc. <br> <br> After the stats have been generated the user is prompted to enter the name of the IMC Output file, that is - an empty text file to paste the morse code translation in to. The translation is also printed on-screen inside the terminal window.
+  </p>
+  <br>
+    
+    
+<!--    ------------->
+ 
+</div>   
+               
+               
+                  
+ <div class="remodal" data-remodal-id="bluej"
+  data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+
+ <!--    ----------->
+
+ <button data-remodal-action="close" class="remodal-close"></button>
+  <h1 class="titlemodal"> Golden Picker</h1>
+    
+    
+      
+     <div class="carouselmain" >          
+   <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+    
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/GP/GP1.JPG" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/GP/GP2.JPG" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/GP/GP3.JPG" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="img/GP/GP4.JPG" alt="Fourth slide">
+    </div>
+        
+      
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+     </div>             
+      
+    
+    
+    
+    
+    
+    
+  <p class="paramodal caromobilespace2">
+    Golden Picker is a small Java based estimation game. The user must select two out of four total rectangles that they believe to be of golden proportions, out of the four rectangles there will aways be two rectangles that are 'golden' in proportion per set (the golden ratio is a mathematical proportion found in design and nature that is thought to be aesthetic). <br><br> They choose their two rectangles and submit their answer which is checked, correct answers result in coin rewards, 50 per correct answer for each set of four (so a maximum of 100 coins per set). There is also the ability to set the difficulty, the golden ratio is 1.618, difficulty increases as the ratio of the regular rectangles becomes closer to 1.618 e.g from 2.3 to 1.78 therefore making it harder to distinguish between regular and golden shapes.
+  </p>
+  <br>
+    
+    
+<!--    ------------->
+ 
+</div>                
+         
+               
+<div class="remodal" data-remodal-id="webdesign"
+  data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+
+   <!--    ----------->
+
+ <button data-remodal-action="close" class="remodal-close"></button>
+  <h1 class="titlemodal"> Smuuv - Web Design </h1>
+    
+    
+      
+     <div class="carouselmain" >          
+   <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators5" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators5" data-slide-to="4"></li>
+    
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/WD/WD1.JPG" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/WD/WD2.JPG" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/WD/WD3.JPG" alt="Third slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="img/WD/WD4.JPG" alt="Fourth slide">
+    </div>
+        <div class="carousel-item">
+      <img class="d-block w-100" src="img/WD/WD5.JPG" alt="Fifth slide">
+    </div>
+      
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+     </div>             
+      
+    
+    
+    
+    
+    
+    
+  <p class="paramodal">
+    Smuuv (brand name for the website) is a personal website displaying personal interests and hobbies. It's made using HTML and CSS3 and has some responsive elements. It demonstrates my ability to display both text based and graphical information in a clean and intutive manner for desktop devices. 
+  </p>
+  <br>
+    
+    
+<!--    ------------->
+ 
+</div>    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>     
+                                 
+<!--
+                
+                ----------------------------------------------
+                          modal content end
+                ----------------------------------------------
+-->      
+     
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+<!--   -----------------------------------------------------             -->
+            
+    
+      </div>
+</section>
+        
+        
+<!-- ------------------------------------------------ -->
+        
+        
+        
+        <section id="photography">
+            <div class="container"> 
+                
+                
+                <div class="row galleria"> 
+                
+                
+                <h4  data-aos="zoom-in"> Galleria </h4>
+                
+                
+                </div>
+                
+                
+                
+<!--    ----------------------------------- image row #1 ----------------------------------------------->
+    <div class="row photorow"> 
+        
+        
+            <div class="col-sm-4 hvr-glow"> 
+            <a  href="https://lh3.googleusercontent.com/BzhPx_827HO1bcq2RxyVckaj4zyJzP-p3HC2LH3m9apDdWkPncyqI1bYXnj04noc3v7unhgekKKTUrnc1ZxL8rQkqOt2-9i76NwbiQjfA2010ORonfryE9WobEhF0kDWZSIeAL3pr8pl2HXJHEJ_I0YLngdfyqD5etea3iAqeJ16iBYMq61tH64BrJTjv-Er_1u_rOcRg0Z2YUZGPxtCaO0Z8SxJvkOO4aDX9t2EOcbkXDhgTIhEDY_BbI8y2H7LoYCXHcl5muN_M6G0WNMennO4EbEjYr73qU29v_DJARPBQk8pGNuZ6J3yUuwz-u58byaaNXBD0nMAcCsOIqHMZZroskJeq1sXcSB2wIXjIuG1uSF64UmBF3dJrLi9S61qT2BDFSluUaRJoxi39QiZ0uE3QkJ8rxIlqRz4iL1NZ55SN5s3JaLR5_t4O8Jmmmf4ZAlDMzCFBK1M0T6WgYyPirNkO37zPpETgkOB_NtSELaMWE63TNgXbTgCLVfUuEtV-l6XTV_1n7wE0dCkaNMsblYq_4vuBObEgA-Yn3iqfV1PmYH4JeXmdIDCbjqEk56nS3azTh6kPg3u1bLjiFCETGfCBFqDUAo6Cl-MpPcOujreSCIPyHTQusy479u_Xfu03g-WihER07bC8I1DGELEmwmmCvfLORt5hWoQ-6n2RZxIMALkAxhj1bYNzHRpAeBNq2YBPAOpGHCLIITwrA=w1277-h969-no" data-lightbox="image-1" data-title="“Lines” - The pylon was placed at the right of the composition with electricity lines diagonally moving up and down the piece, to create an interesting dynamic against a blue sky. Brightness was decreased, to increase the purity of the blue. A sizeable aperture of f/5.6 to record the vibrancy of the sunlight" ><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/BzhPx_827HO1bcq2RxyVckaj4zyJzP-p3HC2LH3m9apDdWkPncyqI1bYXnj04noc3v7unhgekKKTUrnc1ZxL8rQkqOt2-9i76NwbiQjfA2010ORonfryE9WobEhF0kDWZSIeAL3pr8pl2HXJHEJ_I0YLngdfyqD5etea3iAqeJ16iBYMq61tH64BrJTjv-Er_1u_rOcRg0Z2YUZGPxtCaO0Z8SxJvkOO4aDX9t2EOcbkXDhgTIhEDY_BbI8y2H7LoYCXHcl5muN_M6G0WNMennO4EbEjYr73qU29v_DJARPBQk8pGNuZ6J3yUuwz-u58byaaNXBD0nMAcCsOIqHMZZroskJeq1sXcSB2wIXjIuG1uSF64UmBF3dJrLi9S61qT2BDFSluUaRJoxi39QiZ0uE3QkJ8rxIlqRz4iL1NZ55SN5s3JaLR5_t4O8Jmmmf4ZAlDMzCFBK1M0T6WgYyPirNkO37zPpETgkOB_NtSELaMWE63TNgXbTgCLVfUuEtV-l6XTV_1n7wE0dCkaNMsblYq_4vuBObEgA-Yn3iqfV1PmYH4JeXmdIDCbjqEk56nS3azTh6kPg3u1bLjiFCETGfCBFqDUAo6Cl-MpPcOujreSCIPyHTQusy479u_Xfu03g-WihER07bC8I1DGELEmwmmCvfLORt5hWoQ-6n2RZxIMALkAxhj1bYNzHRpAeBNq2YBPAOpGHCLIITwrA=w1277-h969-no" alt="image" ></a>
+                </div>
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/MCPSRgR18poT6fvP8Z9arg_xEd89lWgR99hhXIr6RkShQZLwa8y3BnKB4q65_8ih8iUkFmTkcIsZoQNmPIil4T65TElfiZmgbcK3bRazXaeDR99WyYHUw7cPBS2z1N_TVaXaVYfTrpSm9CsxgTKMqkiK9HetH5NuRf9tYSd4Lvm9teOcMZ9M1qn7Gpz0CoLjCICBAFeU8OKStLlF_KK9fqGInyZaXQyg9JQQv1bXUMlWn2HMiuZVRGSBrhKURbidm0OCHqTgvI1jb213GbQqKnNnnPOtcAa4r8f69a6YLEBYeJ4y0ZgQH87gE1dLjYCRRy948S41fEZo645LR7FiyvZfmqI8rrxvAi8WhB-OZo7sBSZnsslHcqU1jEC4I47wXqO9h0Mtt9srNn-oJ1nqmzaBJfYZg315jYxUN0DYtJaJnqeZqsNm75Bsq_0yiXgXInLT7DEEK5WyfoLg1s4XVt-ArSOyEQfZsZwWj08Wnfa94FKerd9e1ZOIXeaNpfNiStYvYuJ6oN7dXGZqM6AnQx6K8lU6TrPWXDx_4A6eM6VX-UJG84bw-SvBssKcmDxnTbZaK2Y-FHoXV51fZeoJQSOP8oNiuNCDtlJrqeKJh9vK0_6Jvo2q7HaN8tTO_MErpJ0MRh6t6zRUe7horH_0rMNK=w1454-h969-no" data-lightbox="image-1" data-title="“Botanic Garden” -
+Blurred movement due to wind wasn’t desired so a 1/250 sec shutter speed was employed. The original colour was so vibrant, only a small reduction in contrast was added in editing. The yellow flower was placed centrally because I wanted the viewers gaze to be centred initially and then gradually branch out."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/MCPSRgR18poT6fvP8Z9arg_xEd89lWgR99hhXIr6RkShQZLwa8y3BnKB4q65_8ih8iUkFmTkcIsZoQNmPIil4T65TElfiZmgbcK3bRazXaeDR99WyYHUw7cPBS2z1N_TVaXaVYfTrpSm9CsxgTKMqkiK9HetH5NuRf9tYSd4Lvm9teOcMZ9M1qn7Gpz0CoLjCICBAFeU8OKStLlF_KK9fqGInyZaXQyg9JQQv1bXUMlWn2HMiuZVRGSBrhKURbidm0OCHqTgvI1jb213GbQqKnNnnPOtcAa4r8f69a6YLEBYeJ4y0ZgQH87gE1dLjYCRRy948S41fEZo645LR7FiyvZfmqI8rrxvAi8WhB-OZo7sBSZnsslHcqU1jEC4I47wXqO9h0Mtt9srNn-oJ1nqmzaBJfYZg315jYxUN0DYtJaJnqeZqsNm75Bsq_0yiXgXInLT7DEEK5WyfoLg1s4XVt-ArSOyEQfZsZwWj08Wnfa94FKerd9e1ZOIXeaNpfNiStYvYuJ6oN7dXGZqM6AnQx6K8lU6TrPWXDx_4A6eM6VX-UJG84bw-SvBssKcmDxnTbZaK2Y-FHoXV51fZeoJQSOP8oNiuNCDtlJrqeKJh9vK0_6Jvo2q7HaN8tTO_MErpJ0MRh6t6zRUe7horH_0rMNK=w1454-h969-no" alt="image" ></a>
+                </div>
+        
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/MWOLbxFy2k7j3ZHfoccBLzEzk7L5QmBho65ACTwyw4-r5Cjswe14DGwT4mY9TpzzZwG1pxp8sKIX5AEz42fS10guA6XnNuSb1JPQuYn-66cxpzTEi7CJXAxZb5II5uWfc_ogXHA0P5_KlX15ir2wdBQKdeThR9rBx8arOQDC18arySCG7BdQYbsPHMn4dLEdBGCfmniSBKNnoDE9i6mz3yBGnAYcXONQewzmTP57PgTjyQW1R3R6Eim7jVw_gp5ThZMlucH657xZyxOOnqKOc2Ke2FiNh4thc5XCvDlCwugfdeSr1tDN9Azyk9uwdr9YsxJeTZ6tCJCoY8_SL2mJPlba1eire6TgoTRK-JJXRjiz2op_7EpJiglVNiP5Zcj3npP6SVKT6h6PbQ8fggTQHdp_RQpoLFXRlNxQ8mveZNiCODEI3IsQC-6ovWYZRiKfiLphWUPDyo_8tXlcoEt_dCcEaZAM5ZWaZu286_6DkO0faE8sf6onRMXZYk3TzebiXxJzxJPDh8OlNCM1O25bwNDY7GipyEHPgKr8SyaH9a_nBcqxo218RHkLEnitDOx8TEi1DMJzaIdgkomOh0FhHBl1K8FnnInz02GlruY1kYpx_xWSs4CTYFRu4SDQ9nRbA-uFYYmYf8jjIeUEjp39pS8ueT6rY_iyECQseg-RjuFo15hQSHh1Ft1ilUudP_SqN5WyYBI6RQiUOkJrTg=w1454-h969-no" data-lightbox="image-1" data-title="“Hidden Swan” - I purposely took the swans out of focus behind a plant to resonate a feeling of serenity and peace. While their perceived movement straying left of the composition in a dark environment under heavy foliage creates a small curiosity about where they are going and where they came from. A fast shutter speed of 1/320 sec was used to freeze movement. Photoshop was used sparingly to bring out the dark tones more."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/MWOLbxFy2k7j3ZHfoccBLzEzk7L5QmBho65ACTwyw4-r5Cjswe14DGwT4mY9TpzzZwG1pxp8sKIX5AEz42fS10guA6XnNuSb1JPQuYn-66cxpzTEi7CJXAxZb5II5uWfc_ogXHA0P5_KlX15ir2wdBQKdeThR9rBx8arOQDC18arySCG7BdQYbsPHMn4dLEdBGCfmniSBKNnoDE9i6mz3yBGnAYcXONQewzmTP57PgTjyQW1R3R6Eim7jVw_gp5ThZMlucH657xZyxOOnqKOc2Ke2FiNh4thc5XCvDlCwugfdeSr1tDN9Azyk9uwdr9YsxJeTZ6tCJCoY8_SL2mJPlba1eire6TgoTRK-JJXRjiz2op_7EpJiglVNiP5Zcj3npP6SVKT6h6PbQ8fggTQHdp_RQpoLFXRlNxQ8mveZNiCODEI3IsQC-6ovWYZRiKfiLphWUPDyo_8tXlcoEt_dCcEaZAM5ZWaZu286_6DkO0faE8sf6onRMXZYk3TzebiXxJzxJPDh8OlNCM1O25bwNDY7GipyEHPgKr8SyaH9a_nBcqxo218RHkLEnitDOx8TEi1DMJzaIdgkomOh0FhHBl1K8FnnInz02GlruY1kYpx_xWSs4CTYFRu4SDQ9nRbA-uFYYmYf8jjIeUEjp39pS8ueT6rY_iyECQseg-RjuFo15hQSHh1Ft1ilUudP_SqN5WyYBI6RQiUOkJrTg=w1454-h969-no" alt="image"></a>
+                </div>
+        
+        
+        
+        
+        
+        
+            </div>
+                
+  
+          <!--    ----------------------------------- image row #2 ----------------------------------------------->     
+                
+                
+                <div class="row photorow"> 
+                    
+                     <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/qALC6m1AQLp9YSixD-Mkb70JJQGEPze-P7Xrv2saYCdql4xoLCWzoBBiVASBXfY-h1zaSZt0rrRM9cX7UGATp9ND3d67_lM7k6IMJ8ZkaMSvfwEENN5NL6DEA8OjdE-GYR3cenYKNQbHSGe7Im9yA2WcM96HkyFjVh53iQvGSxUzZ4UFjBov5gKjAt8y3JBuJQ2Al2uAPg6N_Kiesc2dCCml7XCbeU-S-YvQ3cWyKZW4ljFTkZyOWLqOIADARTe9m--UFHJQSAsHJYJ93iN7trkhXTkeLRyWHDpkADBC5BzZSUF-o9DbsDTNfmP5VgiqiSumTikfyhMSpI9bLmY5vUP4VX7DtpJ6gqfWfjB0NPRTgJxFludIT-kdSiTWBsookYUTicDSDsqhZhGnIIWLLzL0iOQAiG09R9Duw1e-P4IuG5M3UOXGn-FgIE52j22ZTxlQQ8QR95GpzMip5LhvXMejqMPkDP9qygMdo7yrMj9dF0I9Q0qVw740RaM2_d6KW5JWYRWavKbPqwJZdbrFDHVh2C-xN5nc5LHVaWtWQZJMwJ9d5oZRz8BhkRebcyEBpqp22Ko7YB8ymX6YLGitsfpClGfCykrEnsQZNddH9f0ciZ8ORk8FD2etukCN8pk_yAm31JCq4VBd4BR2i_Thg8sVu6Ix7g0ieYEGFf3UrTU0sT_17S5VOjBoL43E9f2PChNJpgnCqRgprxMRBQ=w1285-h969-no" data-lightbox="image-1" data-title="“Canterbury Rainforest” -
+I wanted to capture the beauty of the Great Stour, greenery and
+riverbed complemented by strong sunlight on a sunny day which fits
+with the theme of ‘Striking colour’.
+For this picture I used a low exposure of 1/60 sec, a large
+aperture of f/5.6 and a ISO speed of 100. The focal length was
+18mm and there was no use of exposure compensation. Photoshop
+was used to lower both brightness and exposure, contrast was used
+to define the scenery and the colour was enhanced slightly."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/qALC6m1AQLp9YSixD-Mkb70JJQGEPze-P7Xrv2saYCdql4xoLCWzoBBiVASBXfY-h1zaSZt0rrRM9cX7UGATp9ND3d67_lM7k6IMJ8ZkaMSvfwEENN5NL6DEA8OjdE-GYR3cenYKNQbHSGe7Im9yA2WcM96HkyFjVh53iQvGSxUzZ4UFjBov5gKjAt8y3JBuJQ2Al2uAPg6N_Kiesc2dCCml7XCbeU-S-YvQ3cWyKZW4ljFTkZyOWLqOIADARTe9m--UFHJQSAsHJYJ93iN7trkhXTkeLRyWHDpkADBC5BzZSUF-o9DbsDTNfmP5VgiqiSumTikfyhMSpI9bLmY5vUP4VX7DtpJ6gqfWfjB0NPRTgJxFludIT-kdSiTWBsookYUTicDSDsqhZhGnIIWLLzL0iOQAiG09R9Duw1e-P4IuG5M3UOXGn-FgIE52j22ZTxlQQ8QR95GpzMip5LhvXMejqMPkDP9qygMdo7yrMj9dF0I9Q0qVw740RaM2_d6KW5JWYRWavKbPqwJZdbrFDHVh2C-xN5nc5LHVaWtWQZJMwJ9d5oZRz8BhkRebcyEBpqp22Ko7YB8ymX6YLGitsfpClGfCykrEnsQZNddH9f0ciZ8ORk8FD2etukCN8pk_yAm31JCq4VBd4BR2i_Thg8sVu6Ix7g0ieYEGFf3UrTU0sT_17S5VOjBoL43E9f2PChNJpgnCqRgprxMRBQ=w1285-h969-no" alt="image"></a>
+                </div>
+        
+        
+        
+            
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/1eXrDngqGyr4l9KsbU1OffLOVtGQQFtH7t85xy4GUWOWOcADxZDTb3LkJ2ofbjFDrFh0IeEl8Ilpgi-jcPFEjzfVp4rbB_WQ4nWe5vLE69TEG264HUwP4y9gWFPaaCJyPNwOpknFCl9tBpMAIyQmQBZY3fTXu7tYnPW5kWp21AvgAN3chPHmhirHAc-xP4BWJxaemjo7Hj-_kml7yXeIEXJxIViwxaLwGGc89BWoNYYiIG1kA_OUdL8LIZehPiHsQgzr4M78fHsTDPmhGpLgqea3Kqm-RIXARAceWTeb1WJR2sfJFi9GrF1CUV9t0A31h5hZVUq3FC1DtfyFYlgPE6ZEKIpDN6txOqVQZ8cvzHeUWnaoGZm8OgByiFT-tncgvEeAjwZgVyRhTzVpeH4LI-zH9EURErKPoYSVyiAbB8OD8x0jS7pFIFCSEbopN5fR1qcCJ43m5PzyM1P27rDTbSx7736Aqa7AY2_oKJYQKdK8OWzgVV4EXCJiXRDUti4vPhbm0wKYYC5n18uHfJ6fQBbVgr_tToJ11Pw-RpZ_7rAUbiqMcaHVyvjFaUw93oyOoByrjIM5XG0LBUDgQG3o-eD666kxZrIV0FtTcHWPgY05buTb3e1wnD1n8wTD22prDs-grWEo0KpB8l11_7a98dnwvQVyrmTRULJovI26SfnZC2Qav-yWyoGLeuzNzDOL3SSSso7QdDl5RrXWjQ=w1920-h931-no" data-lightbox="image-1" data-title="“The new resident” -
+A shopping trolley in the middle of a river thriving with
+life was quite unsightly and fitted the ‘blot on the
+landscape’ category seamlessly. A smaller aperture f/8
+and a long exposure of 1/25 sec was applied to capture
+smooth ripples of water.
+Colours had adjustments to help express the patterns
+made by the ripples above the riverbed."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/1eXrDngqGyr4l9KsbU1OffLOVtGQQFtH7t85xy4GUWOWOcADxZDTb3LkJ2ofbjFDrFh0IeEl8Ilpgi-jcPFEjzfVp4rbB_WQ4nWe5vLE69TEG264HUwP4y9gWFPaaCJyPNwOpknFCl9tBpMAIyQmQBZY3fTXu7tYnPW5kWp21AvgAN3chPHmhirHAc-xP4BWJxaemjo7Hj-_kml7yXeIEXJxIViwxaLwGGc89BWoNYYiIG1kA_OUdL8LIZehPiHsQgzr4M78fHsTDPmhGpLgqea3Kqm-RIXARAceWTeb1WJR2sfJFi9GrF1CUV9t0A31h5hZVUq3FC1DtfyFYlgPE6ZEKIpDN6txOqVQZ8cvzHeUWnaoGZm8OgByiFT-tncgvEeAjwZgVyRhTzVpeH4LI-zH9EURErKPoYSVyiAbB8OD8x0jS7pFIFCSEbopN5fR1qcCJ43m5PzyM1P27rDTbSx7736Aqa7AY2_oKJYQKdK8OWzgVV4EXCJiXRDUti4vPhbm0wKYYC5n18uHfJ6fQBbVgr_tToJ11Pw-RpZ_7rAUbiqMcaHVyvjFaUw93oyOoByrjIM5XG0LBUDgQG3o-eD666kxZrIV0FtTcHWPgY05buTb3e1wnD1n8wTD22prDs-grWEo0KpB8l11_7a98dnwvQVyrmTRULJovI26SfnZC2Qav-yWyoGLeuzNzDOL3SSSso7QdDl5RrXWjQ=w1920-h931-no" alt="image"></a>
+                </div>
+        
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/PNxhvMUZKha-qygzSAdnjwZFw1fdXuedWeYMZCG8hDSXLAFLhlnbQRvpRCQNl09DnBW2CHw1Uaa8jFAPdauv1NryVLLM8Hf-GLnNehrYGrkugB4yZCkmb8_8OrELZYR1l4gQ_PFJgdygs6fS9Isni8wb25gVH5Iu4HRqVMdiq4Rex8_noI-itU2ATmbzgVljOzLKNfdCv0j8I7IorQyf-1atyEXrBvgkdWb_Zu07jqV1i2-rH5kY0kTMu8j5nYCKBIe7cBQ9r9UJTVc5lzZtOADZ9x_2mRaU1sj1YzgaypL5gGFmqp2lk7hDqpUIucjHIz8Zeuo7nMVFgsZGN82M2H6BnJ3L7ni1U8s5voR67Jd0ueTe0jGlt-VYVTqnxz5zKHrbHrswPh5f5VV9jKEQ5ENSuMyDiLIX_Nvs37GjbNqOfwD9nkVA7HDEIbBuIpWWE0vZA17vX7EhYcEkC3BS__aTcxU705QPQOZl55dNW6bWD5EJcpzeeLeGGJvsjfh6G56UVtQs2tQb2t3m4GUmyqDojYNit3_k50KBFlVa6S-CEto7swG5pnEGfrZAkz4en86rFEFpZ4uiHKQCUFu6eobDjgwFMCna9sXoiSo20czrsofWCeKgygimVCGCYTuFpdy5utQ_PxvK75AnqOB_mKw-L-YodfIQYdz67oeBw2rZbclhCidYNYfNU4kK9VmUU958z2mI-Jrg4xhxGQ=w1312-h969-no" data-lightbox="image-1" data-title="“Sibson” -
+Light reflects strongly off the newly built Sibson
+building so although it was quite an overcast day I
+used ISO speed 100. The placement of the Sibson
+sign to the left on the composition and tree to the
+right was done to convey how a man made
+structure tucks comfortably in an area covered by
+heavy foliage. Brightness was lowered to make
+shadows cast on the building panels more visible."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/PNxhvMUZKha-qygzSAdnjwZFw1fdXuedWeYMZCG8hDSXLAFLhlnbQRvpRCQNl09DnBW2CHw1Uaa8jFAPdauv1NryVLLM8Hf-GLnNehrYGrkugB4yZCkmb8_8OrELZYR1l4gQ_PFJgdygs6fS9Isni8wb25gVH5Iu4HRqVMdiq4Rex8_noI-itU2ATmbzgVljOzLKNfdCv0j8I7IorQyf-1atyEXrBvgkdWb_Zu07jqV1i2-rH5kY0kTMu8j5nYCKBIe7cBQ9r9UJTVc5lzZtOADZ9x_2mRaU1sj1YzgaypL5gGFmqp2lk7hDqpUIucjHIz8Zeuo7nMVFgsZGN82M2H6BnJ3L7ni1U8s5voR67Jd0ueTe0jGlt-VYVTqnxz5zKHrbHrswPh5f5VV9jKEQ5ENSuMyDiLIX_Nvs37GjbNqOfwD9nkVA7HDEIbBuIpWWE0vZA17vX7EhYcEkC3BS__aTcxU705QPQOZl55dNW6bWD5EJcpzeeLeGGJvsjfh6G56UVtQs2tQb2t3m4GUmyqDojYNit3_k50KBFlVa6S-CEto7swG5pnEGfrZAkz4en86rFEFpZ4uiHKQCUFu6eobDjgwFMCna9sXoiSo20czrsofWCeKgygimVCGCYTuFpdy5utQ_PxvK75AnqOB_mKw-L-YodfIQYdz67oeBw2rZbclhCidYNYfNU4kK9VmUU958z2mI-Jrg4xhxGQ=w1312-h969-no" alt="image"></a>
+                </div>
+        
+        
+        
+        
+        
+        
+            </div>
+                
+  
+          <!--    ----------------------------------- image row #3 -----------------------------------------------> 
+                
+                <div class="row photorow"> 
+        
+        
+            <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/rxgnGt6H0jdUKXZ5rRUlyZWY0HNzyiRx-7BlsGhOquD_OlsZdiuEqdVvozA0n_5MzK-U3gXFOo2A2AJvqKBajrXmsk97abeFwwQIt_lZF8EUc-kOvqz6NecuZKzIwI1z-PPVKeEwEZKRCgcWMzYT6CqfXEPPgT4drOxhVQ7S9jlNvr0xCW-L2QuO1GfaFZ2CVWDf9b8oJKb7_noKrQFw0dnHX8amgvZF1eo3Plu28xluFLi_hPP3E8V829Acdc3zuuEoyMnVirlLzymVGB-rcA9JVAtRjbEdKSQ_xjSOpIOCJStXVxx_64uF1eD9QUeH2tsD2lkCh8DRnmkJYQlKmqhn4OnwpefrUTxH9tEUA_0sItjE9YfqRs2fLozlQ7aHEZDlDe3wHovpsMZnfantgmuxfjlrpLiEGX7SyBqQCoQmU_1Y2CnS4ZerEBZn1eDEXZ5M1gDqOAzt4Rsv8ITjA5kxS_Mg4tOBA2r3OhzRwJr2alPD6txG_WfUobpvylCQUx6to3yN-eJLCv3q-TFQnVEpqU8c0KEgG6xu1qOdBr6jkzHsa0nc5yw2TALQ7GhyFVkk5T_UyTdTHhzEOkHuUuPbgaGlM8dhT9YzlcDButbbmru4hx6uqMx-aPdnstzO67rELMxmfW-_X3TM5f1fJNtfrLnmVPXJYLmZjD2LHdDry5l64GELogBXOq8GSaGljoxOUcLNa9NScUmrxw=w1422-h969-no" data-lightbox="image-1" data-title="“Curled Wurld” -
+Darkening and reduced contrast helped to
+define the objects shine. A 36mm focal length
+was utilized to zone into the object and cut out
+unwanted scenery. The photo was inspired by
+snow globes and the mini-world inside"><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/rxgnGt6H0jdUKXZ5rRUlyZWY0HNzyiRx-7BlsGhOquD_OlsZdiuEqdVvozA0n_5MzK-U3gXFOo2A2AJvqKBajrXmsk97abeFwwQIt_lZF8EUc-kOvqz6NecuZKzIwI1z-PPVKeEwEZKRCgcWMzYT6CqfXEPPgT4drOxhVQ7S9jlNvr0xCW-L2QuO1GfaFZ2CVWDf9b8oJKb7_noKrQFw0dnHX8amgvZF1eo3Plu28xluFLi_hPP3E8V829Acdc3zuuEoyMnVirlLzymVGB-rcA9JVAtRjbEdKSQ_xjSOpIOCJStXVxx_64uF1eD9QUeH2tsD2lkCh8DRnmkJYQlKmqhn4OnwpefrUTxH9tEUA_0sItjE9YfqRs2fLozlQ7aHEZDlDe3wHovpsMZnfantgmuxfjlrpLiEGX7SyBqQCoQmU_1Y2CnS4ZerEBZn1eDEXZ5M1gDqOAzt4Rsv8ITjA5kxS_Mg4tOBA2r3OhzRwJr2alPD6txG_WfUobpvylCQUx6to3yN-eJLCv3q-TFQnVEpqU8c0KEgG6xu1qOdBr6jkzHsa0nc5yw2TALQ7GhyFVkk5T_UyTdTHhzEOkHuUuPbgaGlM8dhT9YzlcDButbbmru4hx6uqMx-aPdnstzO67rELMxmfW-_X3TM5f1fJNtfrLnmVPXJYLmZjD2LHdDry5l64GELogBXOq8GSaGljoxOUcLNa9NScUmrxw=w1422-h969-no" alt="image"></a>
+                </div>
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/OsDA-8ww6gpoMK1jefvVagQ8kfcCj2xBCKGikZlbnqUR1itNLkIxWduURXHi-Ilv3LA5lAPs6zNasTdgg8IW6DyCVg-uGX-Dn8JyzfEehaytw8LGA0_TgXZSeF90REBgFcg6TuBycTeUnD-hoZyfllZ6IEJdXr5_k3u4Dq0iACNkePsv7LePWopHawTydAfklg0qzaZqZAyIrc6_MJkX6Jn0Ee0sdvSO85Yb1XZFYzxJ3R2-EyIZLgsULfqz8X3dDr4J8hL1Tj_pjKhriya3NBCwf3AGbInMaqcOpiXF51ZRKL9fGU6kloqOjh_Drc8pL-OcLMU_g7nzn6ij26WcdtQ1emyQqGB8lJPXXrk6htpFmogLCHDjujVS__3n8h_T6oev1O_1VeqXyUA_QJpJkwzghjjxSdiVhgvThVa7U_chJ_y7iCGFM5O4nfRx1FYUJUS5-pk90g4zpZJrBlRK9srHWjL4i6uG0TBzk4L5xqO0REjix3yG2hM7PUbDWgwHKvBMEZ1Gq8vuY7MsMOP65YqMPtCJVF1o1d9GpsApxZG4iLFP_Afd_AbVjIVCR41IAN5HBuL4HOsbT4zXxAqcBe9LmVp5gTBfz0yDO991P9fK_F479C8sUSHFzXC_4_dpVjzA_0FI2Zf8XrFmpDBeoPLiGbtH9tgeryDDIQHMOVAAqsNX7hOxZbelvQAPWF9B7GA5vnfpwGpTylSdNw=w1454-h969-no" data-lightbox="image-1" data-title="“Leaves” -
+Inspired by the natural tones of foliage, using a soft focus to create a sense of stillness and calmness. "><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/OsDA-8ww6gpoMK1jefvVagQ8kfcCj2xBCKGikZlbnqUR1itNLkIxWduURXHi-Ilv3LA5lAPs6zNasTdgg8IW6DyCVg-uGX-Dn8JyzfEehaytw8LGA0_TgXZSeF90REBgFcg6TuBycTeUnD-hoZyfllZ6IEJdXr5_k3u4Dq0iACNkePsv7LePWopHawTydAfklg0qzaZqZAyIrc6_MJkX6Jn0Ee0sdvSO85Yb1XZFYzxJ3R2-EyIZLgsULfqz8X3dDr4J8hL1Tj_pjKhriya3NBCwf3AGbInMaqcOpiXF51ZRKL9fGU6kloqOjh_Drc8pL-OcLMU_g7nzn6ij26WcdtQ1emyQqGB8lJPXXrk6htpFmogLCHDjujVS__3n8h_T6oev1O_1VeqXyUA_QJpJkwzghjjxSdiVhgvThVa7U_chJ_y7iCGFM5O4nfRx1FYUJUS5-pk90g4zpZJrBlRK9srHWjL4i6uG0TBzk4L5xqO0REjix3yG2hM7PUbDWgwHKvBMEZ1Gq8vuY7MsMOP65YqMPtCJVF1o1d9GpsApxZG4iLFP_Afd_AbVjIVCR41IAN5HBuL4HOsbT4zXxAqcBe9LmVp5gTBfz0yDO991P9fK_F479C8sUSHFzXC_4_dpVjzA_0FI2Zf8XrFmpDBeoPLiGbtH9tgeryDDIQHMOVAAqsNX7hOxZbelvQAPWF9B7GA5vnfpwGpTylSdNw=w1454-h969-no" alt="image"></a>
+                </div>
+        
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/vVhamNSFmWUp3gWNpS3WXV8RrezvzUH89dNFBS26iltdecZj6SiV1A5XdRprTruGMI2j6xeCp4TEIeQJrrGHAmKLLP15f2baS5CUmYKjhveOvkqimg_RXkMZsXYcCsikZESF7jCzl-KdjuOsEesBgA293b705LOus4wBEyW3oHWEuju3xU7NW1b9dZyBaUxAjL39b0LePqefKSIfu-ciuCswNpTggEB6d4NF9LFrnEs_a0LUqzE0xTPKfvD3UGc0WhQTvvjMYOA8Gg8la3dTJ4m-v1iZwq-gY9kOBzV6yrsxmQ-89YxJIpPGJLwl-rszzLbFRsF0UpxYyMic4Y6rd1hRGma8yaPTA6EB5iG1tuol8GeKzHq1AcKOVB3SzMxtoyBU8MMLNboCkmG7qPWqIf6RvO9FiQUWgKFDskliInhEA1K-y4jCffnuTOdpY5_M17lYK0DQApNAvgGHc8NcmZ3-3WEPLCRoEzs8QWlXajpC1wkeUQ_4BK9YaJxNWbJNrELr3cyPNEHZRGDoRk-mgNaZQikxU6lnmbK4taZPW37-7jMGdy6ZH_2e31hU3SO8fwQYO6436H8BIj6ugEgYw6B9RftdobQGzYEbwr0qSXw1HqUV-3g1uUoaYoKvCrtdQyyvPK5zQBSIe7hw63NjBTXv=w1292-h969-no" data-lightbox="image-1" data-title="“Stream” -
+Taken in Bruges, Belgium on my phone. Utilising high exposure to catch the specks of light on the body of water."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/vVhamNSFmWUp3gWNpS3WXV8RrezvzUH89dNFBS26iltdecZj6SiV1A5XdRprTruGMI2j6xeCp4TEIeQJrrGHAmKLLP15f2baS5CUmYKjhveOvkqimg_RXkMZsXYcCsikZESF7jCzl-KdjuOsEesBgA293b705LOus4wBEyW3oHWEuju3xU7NW1b9dZyBaUxAjL39b0LePqefKSIfu-ciuCswNpTggEB6d4NF9LFrnEs_a0LUqzE0xTPKfvD3UGc0WhQTvvjMYOA8Gg8la3dTJ4m-v1iZwq-gY9kOBzV6yrsxmQ-89YxJIpPGJLwl-rszzLbFRsF0UpxYyMic4Y6rd1hRGma8yaPTA6EB5iG1tuol8GeKzHq1AcKOVB3SzMxtoyBU8MMLNboCkmG7qPWqIf6RvO9FiQUWgKFDskliInhEA1K-y4jCffnuTOdpY5_M17lYK0DQApNAvgGHc8NcmZ3-3WEPLCRoEzs8QWlXajpC1wkeUQ_4BK9YaJxNWbJNrELr3cyPNEHZRGDoRk-mgNaZQikxU6lnmbK4taZPW37-7jMGdy6ZH_2e31hU3SO8fwQYO6436H8BIj6ugEgYw6B9RftdobQGzYEbwr0qSXw1HqUV-3g1uUoaYoKvCrtdQyyvPK5zQBSIe7hw63NjBTXv=w1292-h969-no" alt="image"></a>
+                </div>
+        
+        
+        
+        
+        
+        
+            </div>
+                
+  
+          <!--    ----------------------------------- image row # ----------------------------------------------->      
+                
+                
+                
+                  
+                <div class="row photorow"> 
+        
+        
+            <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/yohaAHhE6dn5J2oDX8I8SS9gef_HgdXuXY-w9UwmxN2lVx5aNetSYfjLXdHLD0D7krbALvZUmjdT8K_ZrXi5KuV8wRNH3TM2ek62wBRT-b7ELlfKK7xkA2T0Oeh2orgDg3lAKnMGrI9SOJHKFs4ZSq4HpafBeyHoku5OFQ7Us-9-Y4-cNEqvn9-tko49p9uXxu6-Lg0vRfLL3QwetBDXQsCYhGSuK-Am2GT_8Obju2EMSrz7P1nUp0HeGeuEJ9S2ItDyXiRr58gWXMdomJy2pKrucvJCPjL24W_h7lP-8CXxxeK64yuHy9iUXoor74BryBhcqMmaD-dEF7vvMMfFA8BLYJ-QqTyhlv-0BL6VqhhfjSAaNjXYnm9fcWBHcHmjbIPbNrU5g6tHS5nOEAvw5bSSuQ_8d0-oit7WHo6y6l9gC4zAZ7j5HtA0gfwtl0dWXU5aEWfQ45ts2q-jO8DFlJ9eLV5HpYg5ls03ZfI2oZSwq5rIlZi5-6VEv7kTXFgQli6PTFryk3Ai62RRJ2nnRqqvbrhj2wbsaz-1csxPKb1igvofaWCnk6-D0BjTqKPbgj_VeDGGW3vhMsXNxHP9mMGCAJ5IfNIu7qBeMqIMiVY4fmtuMw60Ric8USXS10lEPtubKqC5xMKUUuJG6WrVzY_KZD9fgpcPlnPReUBXloxUPWjy60-OMhZzkGVC73Se8xfTUwYromrrmgaxCw=w1292-h969-no" data-lightbox="image-1" data-title="“Castle” - an incredibly complex structure host to many sculptures/monuments, and various other artisitic elements. Buildings like this reinforce the fact that Bruges was an important part of the renaissance era."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/yohaAHhE6dn5J2oDX8I8SS9gef_HgdXuXY-w9UwmxN2lVx5aNetSYfjLXdHLD0D7krbALvZUmjdT8K_ZrXi5KuV8wRNH3TM2ek62wBRT-b7ELlfKK7xkA2T0Oeh2orgDg3lAKnMGrI9SOJHKFs4ZSq4HpafBeyHoku5OFQ7Us-9-Y4-cNEqvn9-tko49p9uXxu6-Lg0vRfLL3QwetBDXQsCYhGSuK-Am2GT_8Obju2EMSrz7P1nUp0HeGeuEJ9S2ItDyXiRr58gWXMdomJy2pKrucvJCPjL24W_h7lP-8CXxxeK64yuHy9iUXoor74BryBhcqMmaD-dEF7vvMMfFA8BLYJ-QqTyhlv-0BL6VqhhfjSAaNjXYnm9fcWBHcHmjbIPbNrU5g6tHS5nOEAvw5bSSuQ_8d0-oit7WHo6y6l9gC4zAZ7j5HtA0gfwtl0dWXU5aEWfQ45ts2q-jO8DFlJ9eLV5HpYg5ls03ZfI2oZSwq5rIlZi5-6VEv7kTXFgQli6PTFryk3Ai62RRJ2nnRqqvbrhj2wbsaz-1csxPKb1igvofaWCnk6-D0BjTqKPbgj_VeDGGW3vhMsXNxHP9mMGCAJ5IfNIu7qBeMqIMiVY4fmtuMw60Ric8USXS10lEPtubKqC5xMKUUuJG6WrVzY_KZD9fgpcPlnPReUBXloxUPWjy60-OMhZzkGVC73Se8xfTUwYromrrmgaxCw=w1292-h969-no" alt="image"></a>
+                </div>
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/mrCzxzKuVoQw2aRxd3zD4Mz2v-kw-MGnSoHIHfyQK8ygHF4WeCYf1ry0wbMh8KTMYMoIV2s3gUz_BacSxDhYrBvtnTIgPkaKixzASIyYVEBOWwZMAzWAy77hZNqZAcCjjzbybVqazRG2vzR1vz9slAg12yLXoTEMKjaFZvnPyUdjRGxzmT8MfSqpRwoyh-I2LUdWa9wm6I1huOPzrzgX-VIsyyMI9ooJ4V74dp3EM0DgWjT524pWDYZPo3e1kyWE5EQa64_0M-L9po4tKbtL5wTJMGxi8Fzl7-72rZomHOHJpcLnZoJjR-gW2Kbf0eGZF_DWsOmMAffS-JIvxYaug0lr3Vf6KiEPepqFQozFc6LxWRoaoDrQfgbug1EvMrRiNyf2L2nMOfHsSTmtum4ypjjQRc55MGQe8PEOL4p5WkYQK0n-3sifcJNUcOCfmYJIelYSyYBozEys1j6Q7VoiAxXpXS7F_p1M1-E-hMQzjj8NS5faxlHz_94w8BANgwOwNM8RjYVlX608G9TnMvp0EhufO0mBVJSac_tiMvlz9fG8pZelnD2j8fuLBwOuqNxE6XQer6Eh2o0QMISBLo7Mz8jN-Cq8Q0bLMBR7FJEzLsi9B0BgQoK6RKaRDG5gl7069aVnbxbjWE3jVO7Fu5k3VmRR=w1292-h969-no" data-lightbox="image-1" data-title="“Backstreets” -
+Taken on a backroad that I found whilst exploring the Bruges town centre, I really liked the shade of green on the central house as well as the architecture of the all the houses pictured, thin and tall with tall windows."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/mrCzxzKuVoQw2aRxd3zD4Mz2v-kw-MGnSoHIHfyQK8ygHF4WeCYf1ry0wbMh8KTMYMoIV2s3gUz_BacSxDhYrBvtnTIgPkaKixzASIyYVEBOWwZMAzWAy77hZNqZAcCjjzbybVqazRG2vzR1vz9slAg12yLXoTEMKjaFZvnPyUdjRGxzmT8MfSqpRwoyh-I2LUdWa9wm6I1huOPzrzgX-VIsyyMI9ooJ4V74dp3EM0DgWjT524pWDYZPo3e1kyWE5EQa64_0M-L9po4tKbtL5wTJMGxi8Fzl7-72rZomHOHJpcLnZoJjR-gW2Kbf0eGZF_DWsOmMAffS-JIvxYaug0lr3Vf6KiEPepqFQozFc6LxWRoaoDrQfgbug1EvMrRiNyf2L2nMOfHsSTmtum4ypjjQRc55MGQe8PEOL4p5WkYQK0n-3sifcJNUcOCfmYJIelYSyYBozEys1j6Q7VoiAxXpXS7F_p1M1-E-hMQzjj8NS5faxlHz_94w8BANgwOwNM8RjYVlX608G9TnMvp0EhufO0mBVJSac_tiMvlz9fG8pZelnD2j8fuLBwOuqNxE6XQer6Eh2o0QMISBLo7Mz8jN-Cq8Q0bLMBR7FJEzLsi9B0BgQoK6RKaRDG5gl7069aVnbxbjWE3jVO7Fu5k3VmRR=w1292-h969-no" alt="image"></a>
+                </div>
+        
+        
+         <div class="col-sm-4 hvr-glow"> 
+            <a href="https://lh3.googleusercontent.com/3sJLTcipBHt80PJ8NQERkx6ZMNZux7nxPQ9dG86MDu8IkpWZfo86Q0Cdq9_O4O-tCJ4fvZ_jRiMiElKTC0LUjCWHg7uoc5Fgiot6bjeihHHRSx29_R-IM3A_5UfrDYqGElehyGvEx0Si-NMFmSt1v1HxlGdsP2fyVzNGXE1hqVhl0ww0U9C1_OrXEtVyXCDvRkauoAtxAXHKqoDoxRtYg-DIu4vW4mkkHuNwiWPm_Ce3TFeXd_jVK09FTcH_-5XPb7ujA-73t9Lzm4rKOldqiq5X0M2OwKzcT35HCAa4gE2iy2pad6tNbmfg1yzQAoPIG7fVqgeoPCpsv0zhHCn2s1d4XG5PeGUsrTR45-tLihXUvapcHoOm2pCGjnTEz_IFse0cPjpYt5UkBNePmcNfNpzR10tLQPDQF3r4ZpqAsnbzTFXraABEkh-7bghiTubp3T_OyiZLpiTTrHhA0KQeRkCxK7s-_1SO0sZYkk39HwubIPDD2ydFQWpcwBzoo6ixotMscVLNcOvxBSp5l4OZ_ms9oUfP84JQSCHQqXZukp44DvmbO82EQ8rQO-ZkramlMpj_zcsnwN_7PaKtEIPTWDUAchSgRyfOAeBoPiyNdq_Jt_S7-Q0WhjZQi0cl0VkwUMYaUp3CPHgUVmLUG3Bh2L-lN44MZ7YbWpv0ygRY9LFPY1y6Ib5GpYzaPwLJVQYtTkqPZ67m4aP8pO_Tvg=w1292-h969-no" data-lightbox="image-1" data-title="“Grand Museum” - A museum I found in a main area of the bruge town centre, again another building displaying very intricate architecture but also cultural value."><img data-aos="zoom-in" 
+     data-aos-duration="2500" class="img-fluid" src="https://lh3.googleusercontent.com/3sJLTcipBHt80PJ8NQERkx6ZMNZux7nxPQ9dG86MDu8IkpWZfo86Q0Cdq9_O4O-tCJ4fvZ_jRiMiElKTC0LUjCWHg7uoc5Fgiot6bjeihHHRSx29_R-IM3A_5UfrDYqGElehyGvEx0Si-NMFmSt1v1HxlGdsP2fyVzNGXE1hqVhl0ww0U9C1_OrXEtVyXCDvRkauoAtxAXHKqoDoxRtYg-DIu4vW4mkkHuNwiWPm_Ce3TFeXd_jVK09FTcH_-5XPb7ujA-73t9Lzm4rKOldqiq5X0M2OwKzcT35HCAa4gE2iy2pad6tNbmfg1yzQAoPIG7fVqgeoPCpsv0zhHCn2s1d4XG5PeGUsrTR45-tLihXUvapcHoOm2pCGjnTEz_IFse0cPjpYt5UkBNePmcNfNpzR10tLQPDQF3r4ZpqAsnbzTFXraABEkh-7bghiTubp3T_OyiZLpiTTrHhA0KQeRkCxK7s-_1SO0sZYkk39HwubIPDD2ydFQWpcwBzoo6ixotMscVLNcOvxBSp5l4OZ_ms9oUfP84JQSCHQqXZukp44DvmbO82EQ8rQO-ZkramlMpj_zcsnwN_7PaKtEIPTWDUAchSgRyfOAeBoPiyNdq_Jt_S7-Q0WhjZQi0cl0VkwUMYaUp3CPHgUVmLUG3Bh2L-lN44MZ7YbWpv0ygRY9LFPY1y6Ib5GpYzaPwLJVQYtTkqPZ67m4aP8pO_Tvg=w1292-h969-no" alt="image"></a>
+                </div>
+        
+        
+        
+        
+        
+        
+            </div>
+                
+              
+                
+                
+            
+            
+            </div>
+    </section>
+        
+        
+       
+        
+
+        
+              
+        
+  <section id="animation">
+      
+   
+      
+      <div class="container animsection"> 
+          
+          <div class="row galleria"> 
+              
+              <div class="col-sm-5" data-aos="fade-up" data-aos-duration="2000" > 
+              <h4 class="animtitle"> Animation</h4>
+                  <h5 class="animtitle2"> 3D Modelling and texturing with Maya</h5>
+              
+              </div>
+                  
+              <div class="col-sm-7"> 
+                  
+                  
+     <div class="hovereffect" data-aos="fade-down" data-aos-duration="2000">
+        <img class="img-responsive" src="img/MAYAWEBSITECONTENT/CGandBackplate.jpg" alt="image">
+            <div class="overlay">
+                <h2>Project Overview</h2>
+				<p>
+                    
+                    The project required that we integrated a 3d Object into a 2d environment. The first point of action was matching the computer generated camera to the real world camera that took the original image of 2d environment. 
+					
+				</p>
+            </div>
+    </div>
+      
+              
+              
+              </div>
+          
+          
+          
+          </div>
+          
+          </div>
+          
+          
+          
+          <div class="container-fluid"> 
+          
+          <div class="row animcontent"> 
+          
+          
+          <div class="col-sm-6"> 
+              
+                           
+     <div class="hovereffect" data-aos="fade-right" data-aos-duration="2000">
+        <img class="img-responsive" src="img/MAYAWEBSITECONTENT/1CameraMatch.jpg" alt="" >
+            <div class="overlay">
+                <h2>Camera Matching</h2>
+				<p>
+                   We were supplied a technical back plate with objects of known size to help us match the cameras. By changing the camera into position and varying its focal length we recreated the position of the real camera that took the back plate photo. A technique to achieve this camera matching is to make an object whose size and shape we know and manoeuvre the camera until the angle and orientation fit. 
+					
+				</p>
+            </div>
+    </div>
+              
+              </div>
+          
+             
+          <div class="col-sm-6"> 
+              
+                           
+     <div class="hovereffect" data-aos="fade-left" data-aos-duration="2000">
+        <img class="img-responsive" src="img/MAYAWEBSITECONTENT/2Groundplanetechnical.jpg" alt="">
+            <div class="overlay">
+                <h2>Ground Plane and Technical Plate</h2>
+				<p>
+                    We then had to create a ground plane that would catch the light of our artificial CG light and the shadow of our 3d object, this was aided by another technical back plate that had a real chrome and grey sphere to help tweak the lighting and darkness of the shadows.
+					
+				</p>
+            </div>
+    </div>
+              
+              
+              </div>
+          
+           </div>
+              
+              
+              <div class="row animcontent"> 
+          
+          
+          <div class="col-sm-6"> 
+              
+                          
+     <div class="hovereffect" data-aos="fade-right" data-aos-duration="2000">
+        <img class="img-responsive" src="img/MAYAWEBSITECONTENT/3RenderLayersAppliedMaterials.jpg" alt="">
+            <div class="overlay">
+                <h2>SkyDome</h2>
+				<p>
+                    A sky dome was implemented (a global illumination method) was used to simulate indirect lighting e.g. sunlight and it was adjusted and balanced to match that in the technical back plate, a directional light was also required.
+					
+				</p>
+            </div>
+    </div>
+              
+              </div>
+          
+             
+          <div class="col-sm-6"> 
+              
+                           
+     <div class="hovereffect" data-aos="fade-left" data-aos-duration="2000">
+        <img class="img-responsive" src="img/MAYAWEBSITECONTENT/4ImportGeomHypershadecolorCorrect.jpg" alt="">
+            <div class="overlay">
+                <h2>Modelling and applying Shaders</h2>
+				<p>
+                    We had to make a model using geometric shapes and tools to sculpt them, like for example creating bezels, once the geometry had been created we had to apply UV’s which is a texture showing if there is image distortion as well as the showing the orientation of the image. Shaders also would resonate the effect of whatever material we wanted our geometry to be, e.g. reflectivity.
+					
+				</p>
+            </div>
+    </div>
+              
+              
+              </div>
+          
+           </div>
+              
+              
+              <div class="row">
+                  
+                  <div class="col-sm-3"> </div>
+              
+                  
+                      
+          <div class="col-sm-6"> 
+              
+                           
+     <div class="hovereffect" data-aos="zoom-in" data-aos-duration="2000">
+        <img class="img-responsive" src="img/MAYAWEBSITECONTENT/5OtherRenderLayers.jpg" alt="">
+            <div class="overlay">
+                <h2>Render Layers</h2>
+				<p>
+                    Render layers that contained separated components (e.g. a sky dome or a sphere) used to build the image of the geometry were used to help in refining eliminating the need to re-render the 3D scene. For example in the shadow layer we only wanted to render the shadows of the balls, not the actual balls.
+					
+				</p>
+            </div>
+    </div>
+              
+              
+              </div>
+                  
+                  
+                   <div class="col-sm-3"> </div>
+              
+              
+              </div>
+              
+              
+              
+              
+       
+              
+              
+              </div>
+      
+      
+   
+      
+      
+      
+      
+      
+    
+      
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+<section id="contact" class="services">
+    
+   <div class="container">
+       
+       
+       <div class="row contitle"> 
+       
+       <h4 data-aos="zoom-in-right"> Get in Touch</h4>
+       </div>
+       
+       
+       <div class="row contacttop"> 
+    
+    <div class="col-sm-6 contactsect"> 
+       
+        <h2 data-aos="zoom-out-up">Send an e-mail?</h2>
+
+       
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain" data-aos="fade-up">
+Name:<br>
+<input type="text" name="name" size="27"><br>
+E-mail:<br>
+<input type="text" name="mail" size="27"><br>
+Comment:<br>
+<input type="text" name="comment" size="27" style="height: 150px;"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+    
+    
+    
+       
+       
+       
+       
+       </div>
+ 
+       <div class="col-sm-3 contactsect"> 
+           <h2 data-aos="zoom-out-up"> Address</h2> 
+           <br> <p data-aos="fade-up" class="contactinfo"> London <br>
+Walthamstow E17<br>
+United Kingdom</p> </div>
+       
+       <div class="col-sm-3 contactsect"> 
+           <h2 data-aos="zoom-out-up"> Social Media</h2> <br> 
+           
+           
+           <p class="contactinfo" data-aos="fade-up"> Toluadu@live.co.uk<br><br>
+<!--+46 (0)73 230 79 98--> Credits:
+               <br>
+           <br> All Icons from www.flaticon.com and <br>Photos not taken by <br>myself from https://www.pexels.com/ or https://www.svgbackgrounds.com/ </p> 
+           
+           <a href="https://twitter.com/Toluinho" class="scicon hvr-push"> 
+           
+           <img data-aos="fade-up" src="img/twitter.svg" alt="icon" height="42" width="42"> 
+           
+           </a>
+           
+           <a href="https://www.instagram.com/toluinho/" class="scicon hvr-push"> 
+           <img  data-aos="fade-up" src="img/instagram-logo.svg" alt="icon" height="42" width="42">  
+           
+           </a>
+           
+           
+           
+           </div>
+    
+    </div>
+       
+       
+<!--    ------------------------------------------------------------------   -->
+       
+       
+       
+       
+      
+    
+    </div> 
+    
+    
+    
+    
+</section>
+        
+        
+  
+        
+        
+        
+        
+        
+         
+        
+        
+
+        
+ </div>
+    
+
+  
+    
+<!--
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript"> AOS.init({
+            duration: 1600,
+            
+        }); </script>
+-->
+    
+    
+     
+   
+    
+    
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        
+        duration: 1600,
+        
+        
+    }
+    
+    
+    
+    
+    );
+  </script>
+    
+    
+</body>
+
+</html>

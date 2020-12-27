@@ -1,0 +1,844 @@
+/* line 2, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+html {
+  overflow-x: hidden; }
+
+/* line 8, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+body {
+  background-color: white;
+  overflow-x: hidden; }
+
+/* line 27, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+#home {
+  margin-top: -20px;
+  background-image: url("https://images.pexels.com/photos/34727/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 105vh; }
+
+/* line 54, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+#about {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: white; }
+
+/* line 70, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+h1 {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-size: 70px;
+  text-align: left; }
+
+@media only screen and (max-width: 800px) {
+  /* line 83, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  h1 {
+    font-size: 50px; }
+  /* line 88, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  #home {
+    background-size: 110vh 100%; } }
+
+/* line 105, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+header {
+  margin-top: 250px;
+  padding-top: 120px; }
+
+/* line 116, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.h1a {
+  color: red; }
+
+/* line 124, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.h1b {
+  margin-bottom: 100px;
+  color: #fff; }
+
+@media only screen and (max-width: 400px) {
+  /* line 135, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .h1a {
+    font-size: 40px;
+    margin-left: -5px; }
+  /* line 141, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .h1b {
+    font-size: 40px;
+    margin-right: -5px; }
+  /* line 148, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  header {
+    margin-top: 175px;
+    padding-top: 60px; }
+  /* line 155, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  #home {
+    height: 103vh; } }
+
+/* line 172, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.nav-item a.active {
+  color: red; }
+
+/* line 182, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.navbar-brand {
+  font-size: 40px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: #333; }
+
+/* line 190, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.navbar-toggler-icon {
+  background-image: url("https://image.flaticon.com/icons/svg/61/61140.svg"); }
+
+/* line 195, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.nav-item a {
+  text-decoration: none;
+  font-family: 'Mukta Mahee', sans-serif;
+  color: #333;
+  font-size: 17px;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* line 211, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.nav-item a:hover {
+  color: #888; }
+
+/* line 219, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.navbar-brand:hover {
+  color: #888; }
+
+/* line 237, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.scrollarrow img {
+  height: 80px;
+  width: 80px; }
+
+/* line 245, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.scrollarrow {
+  margin: 0 auto; }
+
+/* line 257, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.wrapper {
+  padding-top: 230px; }
+
+/* line 264, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+button.scroll_down {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 50px;
+  width: 30px;
+  bottom: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none; }
+
+/* line 281, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+button.scroll_down:before {
+  position: absolute;
+  top: 10px;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #FFF;
+  border-radius: 100%;
+  -webkit-animation: scroll_down_btn-animation 2s infinite;
+  animation: scroll_down_btn-animation 2s infinite;
+  box-sizing: border-box; }
+
+@keyframes scroll_down_btn-animation {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes scroll_down_btn-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+/* -------------------------------------------------------------------------
+   end Scroll Down Button 
+ * ------------------------------------------------------------------------- */
+/* line 344, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.myskills {
+  font-weight: 700;
+  padding-top: 100px;
+  justify-content: center;
+  margin-bottom: 90px; }
+
+/* line 359, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.myskills1 {
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  font-size: 50px; }
+
+/* line 367, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.myskills2 {
+  color: red;
+  font-family: 'Karla', sans-serif; }
+
+@media only screen and (max-width: 400px) {
+  /* line 380, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .contentser {
+    padding-top: 0px; }
+  /* line 386, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .myskills1 {
+    font-size: 40px; }
+  /* line 391, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .myskills2 {
+    font-size: 40px; }
+  /* line 396, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .myskills {
+    padding-top: 85px;
+    margin-bottom: 50px; }
+  /* line 403, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .wrapper {
+    padding-top: 100px; } }
+
+/* line 422, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color; }
+
+/* line 445, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+/* line 462, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.skillbar-title span {
+  display: block;
+  background: white;
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+/* line 478, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+
+/* line 487, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4); }
+
+/* line 504, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.contentser {
+  padding-top: 100px; }
+
+@media only screen and (max-width: 400px) {
+  /* line 512, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .contentser {
+    padding-top: 50px; } }
+
+/* line 523, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.ser {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'Karla', sans-serif; }
+
+@media only screen and (min-width: 600px) {
+  /* line 534, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .services h3 {
+    font-size: 1px; } }
+
+/* line 545, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.services {
+  font-family: 'Karla', sans-serif; }
+
+/* line 552, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.ser h3 {
+  font-weight: 700;
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  text-align: center; }
+
+/* line 561, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.ser p {
+  color: #888;
+  font-size: 18px;
+  text-align: center; }
+
+/* line 574, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.aboutcontainer {
+  padding-top: 70px;
+  padding-bottom: 100px; }
+
+/* line 580, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.about {
+  font-family: 'Karla', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: red; }
+
+/* line 592, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.about2 {
+  font-family: 'Karla', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: #333; }
+
+/* line 603, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.tech {
+  width: 500px; }
+
+/* line 608, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.aboutp {
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  font-size: 23px;
+  text-align: center;
+  padding-top: 70px;
+  font-weight: 100; }
+
+/* line 619, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.tagpara {
+  color: #888;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 4px;
+  text-align: center; }
+
+/* line 628, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.aboutrow {
+  justify-content: flex-end; }
+
+@media only screen and (max-width: 1200px) {
+  /* line 645, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .aboutp {
+    padding-top: 50px;
+    font-size: 20px; } }
+
+@media only screen and (max-width: 1100px) {
+  /* line 660, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .aboutp {
+    padding-top: 50px;
+    font-size: 20px; } }
+
+@media only screen and (max-width: 1000px) {
+  /* line 674, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .aboutp {
+    line-height: 31px;
+    padding: 0;
+    font-size: 17px; } }
+
+@media only screen and (max-width: 400px) {
+  /* line 694, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .aboutp {
+    padding-top: 10px;
+    font-size: 20px; }
+  /* line 701, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .aboutrow {
+    justify-content: center; } }
+
+/* line 720, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+#javascript {
+  padding-top: 270px;
+  background-color: white;
+  padding-bottom: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+/* line 736, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.java2 p {
+  text-align: left;
+  line-height: 25px; }
+
+/* line 746, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.javasect h4 {
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 40px; }
+
+/* line 756, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.infoT {
+  color: #888;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: left;
+  line-height: 31px; }
+
+/* line 768, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.boldinfo {
+  color: #333;
+  font-weight: 600; }
+
+/* line 775, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.line {
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+/* line 786, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.linerow {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+@media only screen and (max-width: 400px) {
+  /* line 797, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  #javascript {
+    padding-top: 85px; }
+  /* line 801, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .javasect h4 {
+    text-align: center; }
+  /* line 806, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .javasect p {
+    text-align: center;
+    line-height: 31px; }
+  /* line 814, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .linerow {
+    padding-top: 15px;
+    padding-bottom: 15px; } }
+
+/* line 826, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.javaimages {
+  width: 500px; }
+
+/* line 832, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.javaparas {
+  padding-top: 50px;
+  letter-spacing: 3px;
+  font-size: 17px; }
+
+/* line 839, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.javacontent {
+  justify-content: center; }
+
+/* line 844, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.marker {
+  font-size: 60px;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  margin-right: -50px;
+  z-index: 1; }
+
+/* line 857, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.marker2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  margin-left: -50px;
+  z-index: 1; }
+
+/* line 871, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.vl {
+  border-left: 2px solid #888;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0; }
+
+@media only screen and (max-width: 400px) {
+  /* line 884, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .marker {
+    margin-right: 0;
+    margin-bottom: -40px; }
+  /* line 891, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .marker2 {
+    margin-left: 0;
+    margin-top: -40px; }
+  /* line 900, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .javaparas {
+    padding-top: 0px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px; }
+  /* line 909, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .vl {
+    height: 30px; } }
+
+/* line 920, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.carouselmain {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  height: 90%;
+  margin: 0 auto; }
+
+/* line 931, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.remodal h1 {
+  text-align: center; }
+
+/* line 939, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.paramodal {
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+  color: #333; }
+
+/* line 946, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.titlemodal {
+  font-family: 'Karla', sans-serif;
+  color: #333;
+  font-size: 40px; }
+
+@media only screen and (max-width: 400px) {
+  /* line 974, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .carouselmain {
+    padding-top: 50px;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto; }
+  /* line 983, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .paramodal {
+    font-size: 13px; }
+  /* line 990, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .caromobilespace {
+    padding-top: 50px; }
+  /* line 996, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .caromobilespace2 {
+    padding-top: 70px; } }
+
+/* line 1010, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+#photography {
+  padding-top: 200px;
+  padding-bottom: 100px; }
+
+/* line 1018, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+#photography img {
+  width: 400px;
+  padding: 20px; }
+
+/* line 1027, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.galleria h4 {
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 40px; }
+
+/* line 1042, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.photorow {
+  justify-content: center; }
+
+@media only screen and (max-width: 500px) {
+  /* line 1058, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .galleria {
+    justify-content: center;
+    text-align: center; }
+  /* line 1068, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .photorow {
+    justify-content: center; }
+  /* line 1075, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  #photography {
+    padding-top: 100px; } }
+
+/* line 1090, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+#contact {
+  border-top: 2px solid red;
+  padding-bottom: 100px;
+  background-color: #ff0000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c50205' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a30000' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23bf050b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239c0001' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23b8080f' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23950001' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b10b12' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238f0000' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa0e15' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880000' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
+
+/* line 1102, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.contitle h4 {
+  font-size: 120px;
+  padding-top: 100px;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 50px;
+  font-weight: 700; }
+
+/* line 1118, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.contacttop {
+  padding-top: 100px; }
+
+/* line 1134, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.contacttop h2 {
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 35px;
+  font-weight: 700; }
+
+/* line 1145, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.scicon {
+  padding-right: 10px; }
+
+/* line 1151, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.contactinfo {
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight: 100; }
+
+/* line 1163, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.contactsect {
+  color: white; }
+
+@media only screen and (max-width: 400px) {
+  /* line 1175, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .contactsect {
+    text-align: center;
+    color: white;
+    padding-top: 50px; }
+  /* line 1184, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .contactsect h2 {
+    padding-bottom: 20px; }
+  /* line 1189, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .contactsect input {
+    text-align: left; }
+  /* line 1195, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .contacttop {
+    padding-top: 10px; }
+  /* line 1208, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .contitle {
+    justify-content: center; } }
+
+/* line 1226, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+#animation {
+  padding-bottom: 160px;
+  padding-top: 150px; }
+
+/* line 1245, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.animatetitle h4 {
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+
+/* line 1257, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.animatetext {
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 17px; }
+
+/* line 1266, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.slidebody {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* line 1273, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.animatesmalltitle {
+  padding-top: 50px;
+  font-size: 25px; }
+
+/* line 1280, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.animatetextS {
+  color: #888;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  text-align: left;
+  font-size: 15px; }
+
+/* line 1292, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.animtitle {
+  padding-top: 100px; }
+
+/* line 1298, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.animtitle2 {
+  color: #888;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 100; }
+
+/* line 1310, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.col-sm-6 {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 1323, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.animsection {
+  padding-bottom: 100px;
+  padding-top: 100px; }
+
+/* line 1337, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: red; }
+
+/* line 1355, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px; }
+
+/* line 1365, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* line 1378, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 1385, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 35px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  text-align: left;
+  font-weight: 700;
+  padding-top: 25%; }
+
+/* line 1405, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+
+/* line 1419, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 1424, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 100; }
+
+/* line 1442, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+@media only screen and (max-width: 1100px) {
+  /* line 1460, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .hovereffect h2 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: -100px; }
+  /* line 1468, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .hovereffect a, .hovereffect p {
+    font-size: 18px;
+    font-size: 10px; }
+  /* line 1477, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  .animsection {
+    padding-bottom: 0px;
+    padding-top: 0px; }
+  /* line 1485, X:/ta480/Portfolio Prototype new - X/css/styles.scss */
+  #animation {
+    padding-bottom: 100px;
+    padding-top: 0px; } }
+
+/*# sourceMappingURL=styles.css.map */

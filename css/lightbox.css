@@ -1,0 +1,227 @@
+html.lb-disable-scrolling {
+  overflow: hidden;
+  /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+/*  background: url(../images/prev.png) left 48% no-repeat;*/
+    background-image: url("https://lh3.googleusercontent.com/p0A9zpATNtyn5uTD7P6-Tux3EJDl_lpzzolM0I_ttdVO5B6fL9EIn3sJu8BaNLKdcrPYjbnQiG0n2YXguCKXoydC0pXZUBBPi-MHUrKphMgOApewqZTBupuEYgMf8fmUOvzJwgYCWcyRyH8CWkaA2JgUnjKepbIzvKGp4MqAMStKwmoptoZeur2447nz0KwZTIa6S7lXwcBsimT49VAUDl96MSGJntiHY1YwY6htaa3h35_Ja1lK3m1TXiCh8eB04wEC8lIWIf4PGXs-N36DnQzNYJPSeSsPii62H-jfhN_6uFs8pfP2j32ucAYDcVi6bc8dekEWnV0isuDWmVap6dk4WPgRObfNKMKI1i6eVFYtXdB1KADzpBfqM_0pxk6AE9L8yFcQ_EO9AeZP5j_FUUIgULKNO9KBh-wgyeV65hz_OTRCUYu8mHE8L1RbFI4-0ECoLL7UZUTqMwcJU8f0Xm740vgnvh0GS3wsceWwU-PSlE7WjzkExWNiz7K3JaVLB_7GH2yTtl5oR1WXQMXUL7rn2vsBxdlrcRv82C4c_is23NzGP-GSN2jX9F4o24RYvfznA1Edd6NDXCOvJ8XK26_Ytxp2qDlirEBkv12UT5DdaBo80RNTGCPrn125X9bKK31KmOX2tpmg74CA-xoxvDOo=s64-no");
+/*     left 48% no-repeat*/
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 34%;
+  right: 0;
+  float: right;
+/*  background: url(../images/next.png) right 48% no-repeat;*/
+   
+      
+     background-image: url("https://lh3.googleusercontent.com/FF3AYt_EEqll4L3qLTwrBM68k8oYEPxCNHJqZkJEV2gLIXzgVGsRVLlXZQ_17OuJKkDzqj6v5vbR8BlxxW7CTl4RvX0Zcz7vZ-Kfr6LXKUOdkBvYWqwkPv4L5mD7oHrf6E02QjYr9OOmKqYkXbPTmmUMlT5ZdB9CsohnptSeKXMrEecuigpDpB-c721mekZsB8SGIegyLmx9sSPMdxrEVe7A3D5x-rjMphBbOsyta2CghpKdS8Nu9wKu6jH2ezjqxPNyDi1FVNmanc7Wav0BN7fE5fTeW4P02zdY9eXWZMEByhntzim67TXvvk5hjXsQ776ze1miAxrNhj0J8xiUjmXoikuJZPFzkOoU5VlopurcPXMGBZW_W-rkJhx7L9lMLHvd3F9w4IFa5-42meS8pSk1yJK1ids8kbbbtf1DjhvNoZ_sSVadwdkscG4S_vJsv_4UHKma07broWY91cXRjfRL3YBaaS8zKWHW3xbelx6BVWzAxVCwNiqVjWvm-NLvFTh9jXPaPwj6eklq9jQTraHQCqyF0TdXpITbxNkaTo2uhwURzLyPq_vjEtOKW2RwX4UzX2tOrvU2j_Ck7_LMvDFN5P94I3Ane5_g6ow5cjIAf2YBw_ldkuACx2wjsaL2O2s8pzgu3TUwj2jwBHOp5UNg=s64-no");
+/*    right 48% no-repeat*/
+    background-position: right;
+    background-repeat: no-repeat;
+    
+     background-size: 15%;
+    
+    
+
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+/*  background: url(../images/close.png) top right no-repeat;*/
+    background-image:url("https://lh3.googleusercontent.com/JUvJWg1XFpwurDINHehFL5AVHi1vH1GUVlY9JCfCRm1kvaYWqY8vDtAIjs4IZ51k94Ekezdicur50-QU5aWjldNxs8anU0ZYsQCamgbkDWNSzzma1-JB2cWpDBtLYafVID5r-41xj6XFApkaxzvIpwoJOtDQx8Ocws3gmlofM0IwLou7ClXzOPjdF3mrRniNEDrP1Bjn0iciQo63IFgIiaIECALpqVQVuGBjZlNMwsyd7zpiMRkBrtfnd2WOWRkVc6trGm6ri9RB_XTnU6bFKoXTbOgfqyfVNK2lg6ssbnddL-hS7FNA2UNmyjJadvBZTDMhe1P2y6r3VDSCdf1OZXQqBLn_WLwWhsutO_TyGlPNGWPxlU2P_2h1dcykJCU6A3j4hKkLcmf9-7_RbLNK3LUQcwk-6mJwuz5yGy44_XhRYvIWE0YOYOS8SBfmEoBS4jF0i0affD384ypi1SZzvs2d8D834pyEBKAfSGgoWJ50_6Q4xh3cav5u7S22pXYwl9D54NmEwXp4ftpeUljNOAkevpQI44c7gIpuIgbjHTBPouJWFn6Izm6vuqfWU48oZQDIfEIjn_ItQywR__VNud3_3DFupCrN7jiSv9_fXa5_Ftdd_AgrRpA3IGfm6fnWBv5VInSq9rnYY1jJFo1Tycic=s64-no"); 
+/*     top right no-repeat*/
+     background-size: 100%;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
